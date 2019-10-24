@@ -34,12 +34,19 @@ namespace BestPracticeXML
             string appName = "StockManage";
             string messageType = "ReceiptDetailQuantityChanged";
 
-          
 
-
-
-
-
+            var data = new
+            {
+                ReceiptDetailId = receiptDetailId,
+                Quantity = quantity,
+                QuantityChange = quantityChange,
+                OrderDetailSubId = orderDetailSubId,
+                Portion = portion,
+                UserId = userId,
+                CompName = compName,
+                AppName = appName,
+                MessageType = messageType
+            };
 
         }
     }
